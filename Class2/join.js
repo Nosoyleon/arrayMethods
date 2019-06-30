@@ -1,3 +1,7 @@
-var mentors = ["Daniel", "Irini", "Ashleigh", "Rob", "Etzali"];
+var sentence = ["This", "is", "the", "javascript", "class"];
 
-console.log("The mentors are: " + mentors.join(", "));
+console.log("default: " + sentence.join());
+console.log("separator: " + sentence.join(" "));
+console.log("separator: " + sentence.join(", "));
+console.log("no space: " + sentence.join(""));
+console.log("escape: " + sentence.join("\n"));
