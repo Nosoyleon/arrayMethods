@@ -6,4 +6,4 @@ function tidy(name) {
 
 var tidyMentors = mentors.map(tidy);
 
-console.log(tidyMentors);
+console.log("tydy mentors", tidyMentors);
