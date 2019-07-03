@@ -20,6 +20,10 @@ function someYearsAgo(age, years) {
   return age - years;
 }
 
+function someYearsAgoNoArrow(age) {
+  return age - this.five;
+}
+
 // Simple map
 var tidyMentors = mentors.map(tidy);
 console.log("tydy mentors", tidyMentors);
@@ -32,6 +36,12 @@ console.log("getting old", oldMentors); //Operations
 
 var fiveYearsAgo = ages.map(age => someYearsAgo(age, 5));
 console.log("5 years ago", fiveYearsAgo);
+
+
+// Additional parameters without arrow function
+var five = 5;
+var fiveYearsAgo = ages.map(someYearsAgoNoArrow, { five });
+console.log("5 years ago no arrow", fiveYearsAgo);
 
 // Mapping objects
 
